@@ -11,13 +11,16 @@ A company called HiTechnic launched a sensor called "HiTechnic Compass sensor" a
 ---
 
 ## ⁉️ Isnt This a Lego® sensor?
+
+<img src="assets/pinout.png" alt="Lego Cable pinout" align="right" width="300" style="margin-left: 15px; border-radius: 12px;">
+
 Yes, and as such, using it with an arduino has more challenges than the code. 
 - How to connect it to the Arduino? Well, Lego® uses I2C communication which is standard everywhere, so with a cut-open Lego cable, connections are easy to make as long as you have a basic understanding of pinouts and soldering skills.
 - **WARNING: While it could work, I highly discourage you from twisting wires without proper soldered connections because I2C is a very picky protocol. It won't cause damage but will likely cause frustration and seemingly not functional setups**
 
-I have provided the pinout of the cable 👉
+I have provided the pinout of the cable 👉 
+(You should connect the 4.3V supply to the Arduino’s 5V pin, both GND pins to ground, and SCL and SDA to their respective pins. The Analog pin is only used for Lego® Motors so can be left disconnected)
 
-<img src="assets/pinout.png" alt="Lego Cable pinout" align="right" width="200" style="margin-left: 15px; border-radius: 12px;">
 <div style="clear: right;"></div>
 
 ---
